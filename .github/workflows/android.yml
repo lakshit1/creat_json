@@ -15,8 +15,8 @@ jobs:
         java-version: 1.8
     - name: Create jar file
       run: |
-        javac cre8json.java
-        jar -cvf createjson.jar cre8json.class
+        javac createJson.java
+        jar -cvf createjson.jar createJson.class
 
     - uses: actions/upload-artifact@v1 
       with: 
