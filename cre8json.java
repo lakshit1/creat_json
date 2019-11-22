@@ -10,7 +10,7 @@ public class cre8json {
 
 	private static String jsonFileName = "wallpapers.json",
 			authorName = "Jahir Fiquitiva", linkPrefix = "http://www.jahirfiquitiva.net/wallpapers/",
-			copyright = "Copyright © 2016 Jahir Fiquitiva. All rights reserved.";
+			copyright = "Copyright Â© 2016 Jahir Fiquitiva. All rights reserved.";
 
 	private static boolean withJPGFiles = false;
 
@@ -35,7 +35,7 @@ public class cre8json {
 		linkPrefix = scan.nextLine();
 
 		System.out.println(
-				"\nType the copyright notice for the wallpapers.\n(For example: \'Copyright © 2016 Jahir Fiquitiva. All rights reserved.\').");
+				"\nType the copyright notice for the wallpapers.\n(For example: \'Copyright Â© 2016 Jahir Fiquitiva. All rights reserved.\').");
 		copyright = scan.nextLine();
 
 		boolean correcto = false;
