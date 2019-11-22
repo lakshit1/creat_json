@@ -10,7 +10,7 @@ public class cre8json {
 
 	private static String jsonFileName = "wallpapers.json",
 			authorName = "Jahir Fiquitiva", linkPrefix = "http://www.jahirfiquitiva.net/wallpapers/",
-			copyright = "Copyright © 2016 Jahir Fiquitiva. All rights reserved.";
+			copyright = "Copyright Â© 2016 Jahir Fiquitiva. All rights reserved.";
 
 	private static boolean withJPGFiles = false;
 
@@ -33,9 +33,13 @@ public class cre8json {
 		System.out.println(
 				"\nType the link prefix for the wallpapers.\n(For example: \'http://www.jahirfiquitiva.net/wallpapers/\').");
 		linkPrefix = scan.nextLine();
+      
+                System.out.println(
+                                "\nType the link suffix for the wallpapers.\n");
+                linkSuffix = scan.nextLine();
 
 		System.out.println(
-				"\nType the copyright notice for the wallpapers.\n(For example: \'Copyright © 2016 Jahir Fiquitiva. All rights reserved.\').");
+				"\nType the copyright notice for the wallpapers.\n(For example: \'Copyright Â© 2016 Jahir Fiquitiva. All rights reserved.\').");
 		copyright = scan.nextLine();
 
 		boolean correcto = false;
@@ -137,7 +141,7 @@ public class cre8json {
 				json.append("\t\t\t\"name\": \"" + images[i].getName().replace(".png", "").replace(".PNG", "") + "\",\n");
 			}
 			json.append("\t\t\t\"author\": \"" + authorName + "\",\n");
-			json.append("\t\t\t\"url\": \"" + linkPrefix + images[i].getName() + "\",\n");
+			json.append("\t\t\t\"url\": \"" + linkPrefix + images[i].getName() + linkSuffix + "\",\n");
 			// json.append(" \"url\": \"" + linkPrefix + folder.replaceAll(" ",
 			// "") + "/" + images[i].getName() + "\",\n");
 			json.append("\t\t\t\"dimensions\": \"" + String.valueOf(width) + " x " + String.valueOf(height) + "\",\n");
