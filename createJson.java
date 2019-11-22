@@ -1,4 +1,4 @@
-package cre8json;
+package createJson;
 
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -6,7 +6,7 @@ import java.util.*;
 
 import javax.imageio.ImageIO;
 
-public class cre8json {
+public class createJson {
 
 	private static String jsonFileName = "wallpapers.json",
 			authorName = "Jahir Fiquitiva", linkPrefix = "http://www.jahirfiquitiva.net/wallpapers/",
